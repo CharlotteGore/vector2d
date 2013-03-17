@@ -5,7 +5,7 @@
 
   This module has parts. The first part is the generation of 2D vectors which have various methods to manipulate them as required, along with the ability to output as CSS Position or CSS Size data.
 
-  The second part is a bunch of static methods that can do vector maths on vectors or simple 2d arrays. Helpful for computing values without changing the original vectors. 
+  The second part is a bunch of static methods that can do vector maths on vectors or simple 2d arrays. Helpful for computing values without changing the original vectors, and may or may not be faster. I've tried to collapse the calculations as much as possible to limit the number of function calls made internally. 
 
 ## Installation
 
@@ -30,6 +30,18 @@
 
   	var P = require('vector2d').vector( 10, 15 );
   	var Q = require('vector2d').vector( 20, 25 );
+
+#### .cssPos()
+
+  Returns the vector as an object `{ left : number, top : number }`
+
+#### .cssSize()
+
+  Returns the vector as an object `{ width: number, height : number }`
+
+#### .coords()
+
+  Returns the vector as an object `{ x : number, height : number }` 
 
 #### .add( vector )
 
