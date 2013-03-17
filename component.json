@@ -1,0 +1,15 @@
+{
+  "name": "vector2d",
+  "repo": "charlottegore/vector2d",
+  "description": "2D vector module",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "manuelstofer/is": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
