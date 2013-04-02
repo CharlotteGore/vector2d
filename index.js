@@ -103,7 +103,7 @@ function parseInput(x, y){
 			x.x ? a = [x.x, x.y] : 
 				x.left ? a = [x.left, x.top] : 
 					x.width ? a = [x.width, x.height] :
-						x[0] ? a = [x[0], x[1]] :
+						is.number(x[0]) ? a = [x[0], x[1]] :
 							a = [0,0]
 	return a;
 }
