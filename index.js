@@ -100,9 +100,9 @@ function parseInput(x, y){
 	var a;
 	is.number(x) ? a = [x, y] : 
 		is.array(x) ? a = x :
-			x.x ? a = [x.x, x.y] : 
-				x.left ? a = [x.left, x.top] : 
-					x.width ? a = [x.width, x.height] :
+			is.number(x.x) ? a = [x.x, x.y] : 
+				is.number(x.left) ? a = [x.left, x.top] : 
+					is.number(x.width) ? a = [x.width, x.height] :
 						is.number(x[0]) ? a = [x[0], x[1]] :
 							a = [0,0]
 	return a;
